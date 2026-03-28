@@ -14,10 +14,16 @@ dependencies = [
     "flake8 (>=7.3.0,<8.0.0)",
     "python-dotenv (>=1.2.2,<2.0.0)",
     "pytest (>=9.0.2,<10.0.0)",
-    "requests (>=2.33.0,<3.0.0)"
+    "requests (>=2.33.0,<3.0.0)",
+    "types-requests (>=2.33.0.20260327,<3.0.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 119
+target-version = ["py313"]
